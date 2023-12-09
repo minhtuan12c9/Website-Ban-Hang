@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(240, 237, 237);
+    /* width: auto; */
+    /* overflow-x: hidden; */
+}
+.menu1{
+    position: relative;
+    z-index: 99;
+}
+/* ////////////////////////////////////////// thanh tiêu đề màu xanh */
+.title-bar{
+    background: rgb(5, 145, 114);
+    padding-left: 100px;
+    padding-right: 150px;
+    position: fixed;
+    top: 0;
+}
+.title-bar ul{
+    display: inline-block;
+}
+.title-bar ul li{
+    display: inline-block;
+    position: relative;
+}
+.title-bar ul li a{
+    text-decoration: none;
+}
+.contact{
+    border-radius: 20px;
+    border: 1px solid black;
+    background: rgb(235, 238, 65);
+    padding: 5px 5px;
+}
+.shop{
+    list-style: none;
+}
+.shop li{
+    margin-left: 30px ;
+}
+.shop li a{
+    color: white;
+}
+.login{
+    margin-left: 750px;
+}
+.login li a{
+    color: white;
+}
+/* ////////////////////////////////////////// thanh lắc đầu */
+.lacdau{
+    background: white;
+    padding: 0 80px;
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+}
+.logolacdau{
+    width: 13%;
+    float: left;
+}
+.danhsach{
+    width: 100%;
+    height: 124px;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+.lacdau ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.lacdau ul li:hover a{
+    color: rgb(133, 11, 145);
+}
+.lacdau ul li a{
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.search{
+    border: none;
+    font-size: 20px;
+    /* border-left: 1px solid gray; */
+    background: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.timkiem{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+.timkiem input{
+    border: none;
+    font-size: 18px;
+    padding: 10px 0;
+    background: white;
+    outline: none;
+}
+.clear{
+    clear: both;
+}
+
+/* ////////////////////////////////////////// slide banner */
+#slideshow {
+    overflow: hidden;
+    height: 720px;
+    max-width: 1920px;
+    /* margin: 0 auto; */
+    margin-top: 159px;
+    /* position: relative; */
+}
+.slide-wrapper {
+    width: 7680px;
+    /* -webkit-animation: slide 5s ease infinite; */
+}
+ .myslide {
+    float: left;
+    height: 720px;
+    width: 1920px;
+    
+}
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -1920px;}
+    50% {margin-left: -1920px;}
+    60% {margin-left: -3840px;}
+    80% {margin-left: -3840px;}
+}
+
+/* thiết kế nút mũi tên*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* thiết kế nút mũi tên next nằm phía bên trái */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* thiết kế nút mũi tên next nằm phía bên phải */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* thiết lập style  nút tròn điều khiển*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: white;
+}
+
+/* ------------------------------------------------------------------------- */
+.bottom{
+    background: rgb(184, 182, 182);
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 20px;
+    padding-left: 100px;
+    height: 20vh;
+    font-size: 20px;
+}
+.bottom h3{
+    padding-bottom: 15px;
+}
+.left-bot{
+    float: left;
+    width: 30%;
+}
+.right-bot{
+    float: right;
+    width: 30%;
+}
+.mid-bot{
+    float: left;
+    width: 30%;
+    margin: 0 5%;
+    padding-left: 30px;
+}
